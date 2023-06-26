@@ -23,6 +23,7 @@ Or install it yourself as:
 
 ```ruby
 require 'each_in_thread'
+require 'net/http'
 
 # Suppose we have an array of URLs we want to fetch.
 urls = ['http://example.com', 'http://example.org', 'http://example.net']
