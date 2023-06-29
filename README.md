@@ -30,9 +30,9 @@ require 'net/http'
 urls = %w[http://example.com http://example.org http://example.net]
 
 # We can fetch each URL in a separate thread like this:
-urls.each_in_thread(concurrency: 5) do |url|
+urls.each_in_thread(concurrency: 5) do |url, i|
   response = Net::HTTP.get(URI(url))
-  puts "Fetched #{url}: #{response.size} bytes"
+  puts "(#{i}) Fetched #{url}: #{response.size} bytes"
 end
 ```
 
