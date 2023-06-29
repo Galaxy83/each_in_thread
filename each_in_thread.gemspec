@@ -10,15 +10,15 @@ Gem::Specification.new do |spec|
 
   spec.summary               = "A Ruby gem for running tasks on enumerables in separate threads"
   spec.description           = "EachInThread extends Ruby's Enumerable module to provide a simple, efficient way to run tasks in parallel by creating separate threads for each item in an enumerable."
-  spec.homepage              = "https://github.com/your-github-username/each_in_thread"
+  spec.homepage              = "https://github.com/Galaxy83/each_in_thread"
   spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
   
   spec.metadata["allowed_push_host"] = "https://rubygems.org"
 
   spec.metadata["homepage_uri"]    = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/your-github-username/each_in_thread"
-  spec.metadata["changelog_uri"]   = "https://github.com/your-github-username/each_in_thread/blob/main/CHANGELOG.md"
+  spec.metadata["source_code_uri"] = "https://github.com/Galaxy83/each_in_thread"
+  spec.metadata["changelog_uri"]   = "https://github.com/Galaxy83/each_in_thread/blob/main/CHANGELOG.md"
 
   spec.files         = Dir.chdir(__dir__) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{\A(?:\.gitignore|\.git|\.circleci|appveyor|bin|test|spec|features)/}) }
