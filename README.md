@@ -1,4 +1,5 @@
 # EachInThread
+[![Gem Version](https://badge.fury.io/rb/each_in_thread.svg)](https://badge.fury.io/rb/each_in_thread)
 
 The `each_in_thread` gem extends Ruby's Enumerable module to provide an easy way to iterate over collections with
 concurrency. This means you can perform actions on each item in an array (or any other enumerable) in separate threads.
