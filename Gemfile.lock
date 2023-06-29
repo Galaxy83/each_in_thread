@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    each_in_thread (0.1.4)
+    each_in_thread (0.1.5)
       thread (= 0.1.0)
 
 GEM
