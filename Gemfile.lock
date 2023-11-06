@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    each_in_thread (0.1.11)
+    each_in_thread (0.1.12)
       thread (= 0.1.0)
 
 GEM
@@ -48,6 +48,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-darwin-22
 
 DEPENDENCIES
   each_in_thread!

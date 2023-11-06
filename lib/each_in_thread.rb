@@ -13,7 +13,13 @@ module Enumerable
 
     each_with_index do |item, i|
       pool.process do
-        yield item, i
+        begin
+          yield item, i
+        rescue => e
+          puts "Exception in thread:"
+          puts e.message
+          puts e.backtrace if verbose
+        end
 
         if verbose
           mutex.synchronize do

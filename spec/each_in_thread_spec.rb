@@ -38,5 +38,13 @@ RSpec.describe Enumerable do
         enumerable.each_in_thread(concurrency: 2, verbose: true) { |_| }
       }.to output(/completed \d+ \/ \d+/).to_stdout
     end
+
+    it 'catches exceptions raised within threads' do
+      expect do
+        enumerable.each_in_thread(concurrency: 2, verbose: true) do |_|
+          raise 'error_message'
+        end
+      end.to output(/Exception in thread:/).to_stdout
+    end
   end
 end
